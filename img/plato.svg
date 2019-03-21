@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 138 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Artboard1" transform="matrix(1,0,0,1,-1460.89,-1281.97)">
+        <rect x="1460.89" y="1281.97" width="137.502" height="93.428" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="1460.89" y="1281.97" width="137.502" height="93.428"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1.4113,0,0,1.65698,-515.679,-4781.37)">
+                <path d="M1404.75,3704.67L1495,3704.67" style="fill:none;stroke:rgb(0,129,178);stroke-width:6.58px;"/>
+            </g>
+            <g transform="matrix(1.4113,0,0,1.65698,-529.086,-4783.85)">
+                <path d="M1421.25,3709.42C1421.25,3709.42 1427.98,3716.17 1437.5,3716.17L1481.25,3716.17C1494.5,3716.17 1497.5,3709.42 1497.5,3709.42" style="fill:none;stroke:rgb(0,129,178);stroke-width:3.38px;"/>
+            </g>
+            <g transform="matrix(1.4113,0,0,1.65698,-515.502,-4786.34)">
+                <path d="M1442.39,3674.47C1442.22,3673.81 1442.13,3673.13 1442.13,3672.42C1442.13,3668.01 1445.71,3664.42 1450.13,3664.42C1454.54,3664.42 1458.13,3668.01 1458.13,3672.42C1458.13,3673.13 1458.03,3673.81 1457.86,3674.47C1473.46,3677.21 1485.63,3688.07 1488.1,3701.67L1412.15,3701.67C1414.62,3688.07 1426.79,3677.21 1442.39,3674.47ZM1452.87,3673.88C1453.11,3673.45 1453.24,3672.95 1453.24,3672.42C1453.24,3670.7 1451.84,3669.31 1450.13,3669.31C1448.41,3669.31 1447.01,3670.7 1447.01,3672.42C1447.01,3672.95 1447.14,3673.45 1447.38,3673.88C1448.28,3673.83 1449.2,3673.8 1450.13,3673.8C1451.05,3673.8 1451.97,3673.83 1452.87,3673.88Z" style="fill:none;stroke:rgb(0,129,178);stroke-width:3.38px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

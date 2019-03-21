@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 381 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Artboard1" transform="matrix(1,0,0,1,-1361.32,-777.341)">
+        <rect x="1361.32" y="777.341" width="380.733" height="98.862" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="1361.32" y="777.341" width="380.733" height="98.862"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(0.712517,0,0,0.712517,452.676,-3279.45)">
+                <clipPath id="_clip2">
+                    <path d="M1438.66,5832.83C1435.87,5823.23 1434.38,5813.08 1434.38,5802.59C1434.38,5742.7 1482.99,5694.09 1542.88,5694.09C1602.76,5694.09 1651.38,5742.7 1651.38,5802.59C1651.38,5813.08 1649.88,5823.23 1647.1,5832.83L1438.66,5832.83Z"/>
+                </clipPath>
+                <g clip-path="url(#_clip2)">
+                    <g transform="matrix(1.40347,-0,-0,1.40347,1275.26,5693.61)">
+                        <use xlink:href="#_Image3" x="113.658" y="0.342" width="154.616px" height="98.521px" transform="matrix(0.997524,0,0,0.99516,0,0)"/>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,6.62869,-4956.29)">
+                <path d="M1355.37,5831.83L1735.37,5831.83" style="fill:none;stroke:rgb(244,123,32);stroke-width:0.73px;"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image3" width="155px" height="99px" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABjAJsDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD16v5nP0sKACgAoAKACgBympaJaJFNZtGbRKprJohokU1m0ZtEqms2jNolU1k0Q0SKazaM2iQGsmjNi0hBQAUAFABQAUAc7X0R7oUAFABQAUAFAC0AOU1m0Q0SqazkjNolU1k0ZskU1m0ZtEqms2iGiVTWTRm0SKazaM2h9QSFIQUAFABQAUAc7X0R7oUAFABQAUAFABQAoNJoTRIprNozaJVNZNGbRKprJohokU1m0ZtEqms2jNokU1k0ZtEqms2iGLUkhQAUAFABQBztfRHuhQAUAFABQAUAFABQA9TUNENEims2jNolU1k0QyVTWbRm0SKayaM2iVTWbRDRIprJoyaJBUEhSEFABQAUAc7X0R7oUAFABQAUAFABQAUAKKTEyRTWbRDRIprNozaJVNZNGbRKprNozaJFNZNENEqms2jNokU1k0ZtDqkkKACgAoA52voj3QoAKACgAoAKACgAoAKAHKalololU1k0ZtEims2jNkqmsmiGiVTWbRm0SKayaM2iVTWbRm0SCs2QwpCCgAoA52voj3QoAKACgAoAKACgAoAKAFFDBj1NZtGbRKprJozaJVNZtENEimsmjNolU1m0ZtEimsmjNolU1m0ZtDqgkKACgDna+iPdCgAoAKACgAoAKACgAoAKAHKalolokU1m0ZtEqmsmiGSqazaM2iRTWTRm0SqazaIaJFNZtGbRIDWTM2LSEFAHO19Ee6FABQAUAFABQAUAFABQAUALQA9TWbRDRIprNozaJUNZNGbRIprNozaJVNZNENEqms2jNokU1m0ZtD6gkKQjna+iPdCgAoAKACgAoAKACgAoAKACgBQaTQmiRTWTRm0SqazaM2iVTWTRDRIprNozaJVNZNGbRKprNozaJFNZtGbFqRHO19Ee6FABQAUAFABQAUAFABQAUAFABQA9TUNENEims2jNolU1k0Q0SqayaM2iRTWbRm0SqazaIaJFNZNGTRJmosTY52voT3AoAKACgAoAKACgAoAKACgAoAKAFHWk0Jkims2jNokU1m0Q0SqayaM2iVTWbRm0SKayaIaJVNZtGbQ8Gs7EWMCvfPaCgAoAKACgAoAKACgAoAKACgAoAKAHrUMhki1mzNkqVkyGSr2rNmbJFrJmbJVrNmbH1mQf/9k="/>
+    </defs>
+</svg>

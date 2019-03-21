@@ -1,0 +1,829 @@
+//fuentes roboto para body
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+// font face
+@font-face {
+    font-family: 'vegan';
+    src: url('font/VeganStylePersonalUse.woff2') format('woff2'),
+         url('font/VeganStylePersonalUse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+//reset
+@import 'reset';
+//colores
+
+$naranja:#F47B20;
+$azul: #0080B1;
+$amarillo: #FCFF93;
+// media mixing sass
+
+$cel: 479px;
+$tableta: 768px;
+$tableta-land: 1024px;
+$hd: 1600px;
+
+@mixin cel {
+  @media (max-width: #{$cel}) {
+    @content;
+  }
+}
+
+@mixin tableta_land {
+  @media (min-width: #{$tableta-land}) and (max-width: #{$hd - 1px}) {
+    @content;
+  }
+}
+
+@mixin tableta {
+  @media (min-width: #{$tableta - 1px}) and (max-width: #{$tableta-land - 1px}) {
+    @content;
+  }
+}
+
+@mixin hd {
+  @media (min-width: #{$hd}) {
+    @content;
+  }
+}
+
+body{
+  display: grid;
+grid-gap: 0;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+h1{
+    font-family: vegan;
+    font-size: 3em;
+}
+
+.flexC{
+  display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+#inicio{
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  .nav{
+
+    @include tableta{
+      grid-column: 1/-1;
+      display: none;
+    }
+    @include cel{
+      grid-column: 1/-1;
+      display: grid;
+    }
+    background-color:#fff;
+    grid-column: 1 / 3;
+    text-align: right;
+    padding: 2em;
+    @extend .flexC;
+    flex-direction: column;
+.logoMenu{
+  padding: 0.7em;
+    max-width: 400px;
+    height: auto;
+
+}
+   a{
+    color: $azul;
+    font-weight: 900;
+    font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+
+    @extend .anima;
+    &:hover{
+    color: $naranja;
+   }
+   }
+
+
+   .activo{
+     color: $naranja;
+   }
+   ul{
+
+     text-align: right;
+     padding: 1em;
+   }
+   hr{
+     border-top: solid 1px $naranja;
+  width: 100%;
+   }
+   p{
+     text-align: center;
+     color: $azul;
+   }
+   .social{
+     display: flex;
+     flex-direction: row;
+     a{
+     padding: 0.3em;
+     }
+  a{
+    font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (1600 - 300)));
+  }
+   }
+
+   &.mov{
+display: grid;
+   }
+  }
+
+  #sliderInicio{
+    grid-column: 3 / -1;
+    
+    @include tableta{
+      grid-column: 1/-1;
+      border: solid $amarillo;
+    }
+    @include cel{
+      grid-column: 1/-1;
+      border: solid $amarillo;
+    }
+   
+    .unitem{
+      background-color: #F47B20;
+      display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+
+      img{
+        width: 100%;
+        height: 99vh;
+        object-fit: cover;
+        grid-column: 1 / span 5;
+        grid-row: 1/ -1;
+        
+        @include tableta{
+          height: 50vh;
+        }
+
+        @include cel{
+          height: 50vh;
+        }
+      }
+      h2{
+        color: #fff;
+        font-family: vegan;
+        font-size: 4vw;
+        grid-column: 4 / span 2;
+        grid-row: 3/ span 2;
+        line-height: 1.3em;
+        @include tableta{
+          font-size: 7vw;
+          
+        }
+
+        @include cel{
+          font-size: 9vw;
+          grid-column: 3 / span 2;
+        }
+        
+      }
+      .btnC{
+        grid-column: 4 / span 2;
+        grid-row: 5/ span 1;
+
+        @include cel{
+          grid-column: 3 / span 2;
+        }
+      }
+    }
+  }
+
+
+}// fin de inicio
+.btn{
+  display: inline-block;
+color: #fff;
+background-color: $naranja;
+padding: 0.5em 1.8em;
+border-radius: 0.4em;
+@extend .anima;
+&:hover{
+  background-color: $amarillo;
+  color: $azul;
+}
+}
+
+.cien{
+  width: 100%;
+  height: auto;
+}
+
+#bgAmarillo{
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+background: url(img/bg_fondo.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  /*
+  
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd243+0,fcff93+100 
+background: #ffd243; 
+background: -moz-linear-gradient(top, #ffd243 0%, #fcff93 100%); 
+
+background: linear-gradient(to bottom, #ffd243 0%,#fcff93 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd243', endColorstr='#fcff93',GradientType=0 ); /* IE6-9 */
+
+
+/*
+&:before{
+  content: "";
+  width: 100%;
+  height: 350px;
+  background: url(img/bg_fondo.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  //background: #d6211d;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+z-index: -1;
+}
+*/
+
+}
+
+
+
+#dorado{
+  grid-column: 1 / -1;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+
+}
+#txtDorado{
+  margin-top: -4em;
+  h1{
+    font-size: 2em;
+  }
+  p{
+    padding: 0.5em 0;
+  }
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 4;
+  @extend .flexC;
+  flex-direction: column;
+  text-align: right;
+ align-items: flex-end;
+  background-color: $azul;
+  color: #fff;
+  padding: 15%;
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+@extend .azulDegradado;
+
+@include cel{
+  grid-column: 1 /-1;
+  grid-row: 1 / span 2;
+}
+
+
+}
+#imaDorado{
+  grid-column: 4 / span 4;
+  grid-row: 1 / span 5;
+  @include cel{
+    grid-column: 1 /span 7;
+    grid-row: 3 / span 2;
+    -webkit-transform: translateY(-1.5em);
+    transform: translateY(-1.5em);
+  }
+}
+#imaPlayaLarga{
+  grid-column: 2 / span 4;
+  grid-row: 4 /  -1;
+
+  @include cel{
+    grid-column: 2 /-1;
+    grid-row: 6 / -1;
+    -webkit-transform: translateY(-1.5em);
+    transform: translateY(-1.5em);
+  }
+}
+#txtPlayaLarga{
+  grid-column: 6 / -1;
+  grid-row: 4 /  -1;
+  @extend .flexC;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  background-color: $naranja;
+  color: #fff;
+  padding: 15%;
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  p{
+    padding: 0.5em 0;
+  }
+  h2{
+    font-weight: 900;
+    font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .olas{
+    max-width: 70px;
+    height: auto;
+    padding-bottom: 0.5em;
+  }
+  @extend .naranjaDegradado;
+
+  @include cel{
+    grid-column: 1 /-1;
+    grid-row: 4 / span 2;
+  }
+
+}
+
+
+#mariscos{
+  grid-column: 2 / span 6;
+  padding: 12% 0;
+  overflow: hidden;
+position:relative;
+
+  .titulo{
+   padding-bottom: 2em;
+  }
+  h1{
+    color: $naranja;
+display: inline-block;
+  }
+ p{
+  color: $azul;
+  font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1600 - 300)));
+  display: inline-block;
+  padding-left: 1em;
+}
+
+
+#sliderPlatillos{
+  grid-column: 1 / -1;
+}
+
+
+.platillo{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+
+  img{
+    grid-column: 1 / span 4;
+    grid-row: 1 / -1;
+    @include tableta{
+      grid-column: 1/-1;
+    }
+    @include cel{
+      grid-column: 1/-1;
+    }
+
+  }
+.recuadro{
+  grid-column: 4 / -1;
+  grid-row: 2 / span 1;
+  padding: 1.5em;
+  @extend .azulDegradado;
+  color: #fff;
+  h2{
+    font-weight: 900;
+    font-size: calc(22 + (27 - 22) * ((100vw - 300px) / (1600 - 300)));
+  }
+  p{
+    color: #fff;
+    padding: 0.5em 0;
+  }
+  @include tableta{
+    grid-row: 4 / span 1;
+    grid-column: 1/ span 4;
+  }
+
+  @include cel{
+    grid-row: 4 / span 1;
+    grid-column: 1/ -1;
+  }
+
+}
+}
+
+#plato{
+  position: absolute;
+  top:35%;
+  right: 0;
+  width: 8%;
+  height: auto;
+  @include tableta{
+    top: 80%;
+    right: 18%;
+  }
+
+  @include cel{
+    top: 93%;
+    left: 0%;
+    width: 50px;
+  }
+}
+#control{
+  position: absolute;
+  bottom:17%;
+  right: 0;
+width: auto;
+@include tableta{
+  bottom: 15%;
+}
+
+@include cel{
+  bottom: 0%;
+  right: 0;
+}
+
+}
+.btnControl{
+  width: 2em;
+
+  @extend .anima;
+  &:hover{
+   transform: scale(1.3);
+ }
+
+}
+@include cel{
+  padding-bottom: 5em;
+}
+
+}
+
+#eventos{
+  grid-column: 2 / span 6;
+  
+  margin-top: 5em;
+  h1{
+    color: $naranja;
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  .bloque{
+    h2{
+      font-weight: 900;
+      padding-bottom: 0.5em;
+    }
+
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    img{
+   width: 100%;
+      object-fit: cover;
+    }
+    .bandejaInfo{
+      grid-column: 1/span 4;
+      grid-row: 2/span 1;
+      @extend .flexC;
+      flex-direction: column;
+      align-items: flex-start;
+    @extend .azulDegradado;
+    color: #fff;
+    padding: 2em;
+    z-index: 300;
+
+    @include cel{
+      grid-column: 1/span 11;
+      grid-row: 1 /span 1;
+    }
+    }
+    .img{
+      grid-column: 4/-1;
+      grid-row: 1 / -1;
+
+      @include cel{
+        grid-column: 1 /-1;
+        grid-row: 2 /span 1;
+      }
+    }
+
+    .bandejaInfoDer{
+      grid-column: 9/span 4;
+      grid-row: 2/span 1;
+      @extend .flexC;
+      flex-direction: column;
+      align-items: flex-start;
+      a{
+        text-decoration: underline;
+        color: #FCFF93;
+      }
+    @extend .naranjaDegradado;
+    color: #fff;
+    padding: 2em;
+    z-index: 300;
+
+    @include cel{
+      grid-column: 2/-1;
+      grid-row: 1 /span 1;
+    }
+
+    }
+.imgDer{
+      grid-column: 1/span 9;
+      grid-row: 1 / -1;
+      @include cel{
+        grid-column: 1 /-1;
+        grid-row: 2 /span 1;
+      }
+    }
+
+    .bandejaInfoUlt{
+      @extend .bandejaInfo;
+      grid-column: 1/span 5;
+      @include cel{
+        grid-column: 1 / span 10;
+        grid-row: 1 /span 2;
+      }
+   
+    }
+
+    .imgUlt{
+      grid-column: 5 /span 5;
+      grid-row: 1 / -1;
+      @include cel{
+        grid-column: 2 / -1;
+        grid-row: 2 / -1;
+      }
+    }
+
+    ul{
+      grid-row: 1/-1;
+      grid-column:10 / -1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+      color: $azul;
+      padding: 2em;
+      li{
+        padding-bottom: 0.5em;
+        font-weight: 200;
+      }
+img{
+  padding-bottom: 1em;
+  
+}
+
+@include cel{
+  grid-row: 4/-1;
+  grid-column:1 / -1;
+}
+    }
+    
+  }
+ 
+}
+#contacto{
+  grid-column: 1 /-1;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  .textDestino{
+    grid-column: 1 /-1;
+    display: grid;
+    grid-gap: 20px;
+    padding: 3em 2em;
+    grid-template-columns: repeat(3, 1fr);
+  
+    @include cel{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    background-color: $amarillo;
+    color: $azul;
+    @extend .flexC;
+    img{
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  #mapa{
+    height: 70vh;
+    grid-column: 1 / -1;
+  }
+
+  h1{
+    color: $naranja;
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  #forma{
+    grid-column: 2 /span 4;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 25%;
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    @include cel{
+      -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+      grid-column: 1 / -1;
+    }
+    h3{
+      color: #fff;
+      text-align: center;
+      font-size: 1.4em;
+      padding-bottom: 2em;
+      font-weight: 700;
+    }
+
+    input, textarea{
+      width: 100%;
+      border: none;
+      padding: 0.8em;
+      color: $naranja;
+      font-weight: 700;
+      font-size: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    input[type="submit"]{
+      width:30%;
+      background-color: #fff;
+      border-radius: 1.5em;
+      padding: 0.5em 1em;
+      margin-top: 1em;
+      @extend .anima;
+      cursor: pointer;
+      &:hover{
+      background-color: $amarillo;
+     }
+      @include tableta{
+        width: 40%;
+      }
+      @include cel{
+        width: 70%;
+      }
+    }
+    @extend .azulDegradado;
+  }
+}
+
+#foot_logo{
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+ img{
+  max-width: 150px;
+ }
+ @include cel{
+padding-top: 3em;
+}
+}
+#footer{
+  grid-column: 1 / -1;
+  background: url(img/bg_foor.svg) no-repeat $amarillo;
+  background-position: top center;
+  
+  height: 60vh;
+  color: $azul;
+  font-size: 1.1em;
+  text-align: center;
+  @extend .flexC;
+  flex-direction: column;
+  padding-top: 3em;
+  @include cel{
+    padding: 0 1em;
+  }
+  i{
+    color: $azul;
+    font-size: 1.5em;
+    padding: 0.3em;
+  
+  }
+
+  li:last-of-type{
+    margin-top:0.5em;
+    padding-top: 0.5em;
+  border-top: solid $azul 1px;
+  }
+
+}
+.azulDegradado{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0080b1+0,00319b+99 */
+background: #0080b1; /* Old browsers */
+background: -moz-linear-gradient(45deg, #0080b1 0%, #00319b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #0080b1 0%,#00319b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #0080b1 0%,#00319b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0080b1', endColorstr='#00319b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.naranjaDegradado{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f47b20+0,d6211d+100 */
+background: #f47b20; /* Old browsers */
+background: -moz-linear-gradient(45deg, #f47b20 0%, #d6211d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f47b20 0%,#d6211d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f47b20 0%,#d6211d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47b20', endColorstr='#d6211d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+// menu hamburguesa
+
+$buttonWidth: 30px;
+$buttonHeight: 26px;
+$buttonColor: #fff;
+$lineThickness: 4px;
+$transitionSpeed: .25s;
+$transitionEasing: ease-in-out;
+
+// Demo
+.menu-toggle {
+  position: absolute;
+  z-index: 800;
+  right: 25px;
+  top: 25px;
+  display: none;
+  @include tableta(){
+    display: block;
+}
+  @include cel{
+      display: none;
+  }
+  width: $buttonWidth;
+  height: $buttonHeight;
+  
+  background: transparent;
+  border-top: $lineThickness solid;
+  border-bottom: $lineThickness solid;
+  
+  color: $buttonColor;
+  font-size: 0;
+  
+  transition: all $transitionSpeed $transitionEasing;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: $lineThickness;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    background: currentColor;
+    
+    transform: translate(-50%, -50%);
+    transition: transform $transitionSpeed $transitionEasing;
+  } 
+}
+button:hover {
+  color: $naranja;
+}
+
+button.is-active {
+  border-color: transparent;
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.anima{
+  -webkit-transition: all 2s;
+  transition: all 0.5s;
+}
+.alerta{
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 1.5em;
+}
+
+.reserva{
+  a{
+    font-size: 1em!important;
+  }
+}
