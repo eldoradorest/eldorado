@@ -284,11 +284,11 @@
     <div id="forma">
         <h3 lang="es">Formulario de contacto</h3>
 
-        <form id="formu">
-            <input type="text" placeholder="Nombre" id="nombre" lang="es"lang="es">
-            <input type="email" name="name" id="email" placeholder="Email" lang="es"lang="es">
-            <input type="tel" name="tel" id="tel" placeholder="Teléfono" lang="es"lang="es">
-            <textarea name="" id="come" cols="30" rows="10" placeholder="Comentarios" lang="es"lang="es"></textarea>
+        <form id="formu" name="contact" method="POST" data-netlify="true">
+            <input type="text" placeholder="Nombre" id="nombre" name="nombre" lang="es"lang="es">
+            <input type="email" name="name" id="email" placeholder="Email" name="email" lang="es"lang="es">
+            <input type="tel" name="tel" id="tel" placeholder="Teléfono" name="telefono" lang="es"lang="es">
+            <textarea name="" id="come" cols="30" rows="10" placeholder="Comentarios" name="comentarios" lang="es"lang="es"></textarea>
             <input type="submit" value="Enviar" id="submit" lang="es">
             <div id="alerta"></div>
         </form>
