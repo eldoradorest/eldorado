@@ -115,7 +115,7 @@ loop: true
     }
 )
 
-
+/*
 
     const submit = document.querySelector('#submit');
     const alerta = document.getElementById('alerta');
@@ -175,7 +175,7 @@ loop: true
 
     }
     
-
+*/
 // lang
 
 
